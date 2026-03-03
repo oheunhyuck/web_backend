@@ -1,12 +1,13 @@
-app.use(cors({
-  origin: '*'
-}));
+
 const express = require('express');
 const http = require('http');
 const { WebSocketServer } = require('ws');
 const cors = require('cors');
 
 const app = express();
+app.use(cors({
+  origin: '*'
+}));
 app.use(cors());
 app.use(express.json());
 
